@@ -1,0 +1,2296 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\begin_preamble
+\usepackage{fullpage}
+\end_preamble
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "David"
+\font_sans "default" "David"
+\font_typewriter "default" "David"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts true
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype true
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize a4paper
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date true
+\justification true
+\use_refstyle 1
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 0.2cm
+\rightmargin 0.2cm
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Standard
+
+\lang hebrew
+\begin_inset FormulaMacro
+\newcommand{\sumin}{\sum_{i=1}^{n}}
+{\sum_{i=1}^{n}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\sumjn}{\sum_{j=1}^{n}}
+{\sum_{j=1}^{n}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\sumim}{\sum_{i=1}^{m}}
+{\sum_{i=1}^{m}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\sumjm}{\sum_{j=1}^{m}}
+{\sum_{j=1}^{m}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\sumik}{\sum_{i=1}^{k}}
+{\sum_{i=1}^{k}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\sumjk}{\sum_{j=1}^{k}}
+{\sum_{j=1}^{k}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\sumkn}{\sum_{k=1}^{n}}
+{\sum_{k=1}^{n}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\sumnk}{\sum_{n=1}^{k}}
+{\sum_{n=1}^{k}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\sumkm}{\sum_{k=1}^{m}}
+{\sum_{k=1}^{m}}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang hebrew
+\begin_inset FormulaMacro
+\newcommand{\ser}[3]{#1_{1}#2#1_{2}#2#1_{2}#2#1_{3}#2....#2#1_{#3}}
+{#1_{1}#2#1_{2}#2#1_{2}#2#1_{3}#2....#2#1_{#3}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\vn}{v_{1},v_{2},...v_{n}}
+{v_{1},v_{2},...v_{n}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\vm}{v_{1},v_{2},...v_{m}}
+{v_{1},v_{2},...v_{m}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\un}{u_{1},u_{2},...u_{n}}
+{u_{1},u_{2},...u_{n}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\um}{u_{1},u_{2},...u_{m}}
+{u_{1},u_{2},...u_{m}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\vk}{v_{1},v_{2},...v_{k}}
+{v_{1},v_{2},...v_{k}}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang hebrew
+\begin_inset FormulaMacro
+\newcommand{\vecmul}[6]{\left[\begin{matrix}#1\\
+ #2\\
+ #3 
+\end{matrix}\right]\times\left[\begin{matrix}#4\\
+ #5\\
+ #6 
+\end{matrix}\right]=\left[\begin{matrix}\left(#2\right)\cdot\left(#6\right)-\left(#3\right)\cdot\left(#5\right)\\
+ \left(#3\right)\cdot\left(#4\right)-\left(#1\right)\cdot\left(#6\right)\\
+ \left(#1\right)\cdot\left(#5\right)-\left(#2\right)\cdot\left(#4\right) 
+\end{matrix}\right]}
+{\left[\begin{matrix}#1\\
+#2\\
+#3
+\end{matrix}\right]\times\left[\begin{matrix}#4\\
+#5\\
+#6
+\end{matrix}\right]=\left[\begin{matrix}\left(#2\right)\cdot\left(#6\right)-\left(#3\right)\cdot\left(#5\right)\\
+\left(#3\right)\cdot\left(#4\right)-\left(#1\right)\cdot\left(#6\right)\\
+\left(#1\right)\cdot\left(#5\right)-\left(#2\right)\cdot\left(#4\right)
+\end{matrix}\right]}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang hebrew
+\begin_inset FormulaMacro
+\newcommand{\lim}[1]{\lim_{n\rightarrow\infty}\left(#1\right)}
+{\lim_{n\rightarrow\infty}\left(#1\right)}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang hebrew
+\begin_inset FormulaMacro
+\newcommand{\rank}{\text{Rank}}
+{\text{Rank}}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang hebrew
+\begin_inset FormulaMacro
+\newcommand{\im}{\text{Im}}
+{\text{Im}}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang hebrew
+\begin_inset FormulaMacro
+\newcommand{\sp}{\text{Span}}
+{\text{Span}}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang hebrew
+\begin_inset FormulaMacro
+\newcommand{\fancyF}{\mathscr{F}}
+{\mathscr{F}}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang hebrew
+\begin_inset FormulaMacro
+\newcommand{\fancyB}{\mathscr{B}}
+{\mathscr{B}}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang hebrew
+\begin_inset FormulaMacro
+\newcommand{\baseA}{\mathcal{A}}
+{\mathcal{A}}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang hebrew
+\begin_inset FormulaMacro
+\newcommand{\baseB}{\mathcal{B}}
+{\mathcal{B}}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang hebrew
+\begin_inset FormulaMacro
+\newcommand{\baseC}{\mathcal{C}}
+{\mathcal{C}}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang hebrew
+\begin_inset FormulaMacro
+\newcommand{\FF}{\mathbb{F}}
+{\mathbb{F}}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang hebrew
+\begin_inset FormulaMacro
+\newcommand{\CC}{\mathbb{C}}
+{\mathbb{C}}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang hebrew
+\begin_inset FormulaMacro
+\newcommand{\RR}{\mathbb{R}}
+{\mathbb{R}}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang hebrew
+\begin_inset FormulaMacro
+\newcommand{\QQ}{\mathbb{Q}}
+{\mathbb{Q}}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang hebrew
+\begin_inset FormulaMacro
+\newcommand{\NN}{\mathbb{N}}
+{\mathbb{N}}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang hebrew
+\begin_inset FormulaMacro
+\newcommand{\ZZ}{\mathbb{Z}}
+{\mathbb{Z}}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang hebrew
+\begin_inset FormulaMacro
+\newcommand{\kaliCupDot}{\mathbin{\cupdot}}
+{\mathbin{\dot{\cup}}}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang hebrew
+\begin_inset FormulaMacro
+\newcommand{\kaliBigCupDot}{\mathbin{\bigcupdot}}
+{\mathbin{\dot{\bigcup}}}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang hebrew
+\begin_inset FormulaMacro
+\newcommand{\PP}{\mathbb{P}}
+{\mathbb{P}}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang hebrew
+\begin_inset FormulaMacro
+\newcommand{\EE}{\mathbb{E}}
+{\mathbb{E}}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang hebrew
+\begin_inset FormulaMacro
+\newcommand{\nab}{\overline{\nabla}}
+{\overline{\nabla}}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang hebrew
+\begin_inset FormulaMacro
+\newcommand{\supp}{\text{Supp}}
+{\text{Supp}}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang hebrew
+\begin_inset FormulaMacro
+\newcommand{\geo}{\text{Geo}}
+{\text{Geo}}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang hebrew
+\begin_inset FormulaMacro
+\newcommand{\bin}{\text{Bin}}
+{\text{Bin}}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang hebrew
+\begin_inset FormulaMacro
+\newcommand{\ber}{\text{Ber}}
+{\text{Ber}}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang hebrew
+\begin_inset FormulaMacro
+\newcommand{\poi}{\text{Poi}}
+{\text{Poi}}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang hebrew
+\begin_inset FormulaMacro
+\newcommand{\exp}{\text{Exp}}
+{\text{Exp}}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang hebrew
+\begin_inset FormulaMacro
+\newcommand{\cov}{\text{Cov}}
+{\text{Cov}}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang hebrew
+\begin_inset FormulaMacro
+\newcommand{\var}{\text{Var}}
+{\text{Var}}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang hebrew
+\begin_inset FormulaMacro
+\newcommand{\sinc}{\text{sinc}}
+{\text{sinc}}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang hebrew
+\begin_inset FormulaMacro
+\newcommand{\ra}{\text{\ensuremath{\rightarrow}}}
+{\text{\ensuremath{\rightarrow}}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\la}{\text{\ensuremath{\leftarrow}}}
+{\text{\ensuremath{\leftarrow}}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\renewcommand{\iff}{\text{\ensuremath{\Leftrightarrow}}}
+{\text{\Leftrightarrow}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\E}{\text{\ensuremath{\exists}}}
+{\text{\ensuremath{\exists}}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\RA}{\text{\ensuremath{\Rightarrow}}}
+{\text{\ensuremath{\Rightarrow}}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\LA}{\text{\ensuremath{\Leftarrow}}}
+{\text{\ensuremath{\Leftarrow}}}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang hebrew
+\begin_inset FormulaMacro
+\newcommand{\li}{\text{\ensuremath{\langle}}}
+{\text{\langle}}
+\end_inset
+
+ 
+\begin_inset FormulaMacro
+\newcommand{\ri}{\rangle}
+{\text{\rangle}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\vec}{\begin{bmatrix}\end{bmatrix}}
+{\begin{bmatrix}\end{bmatrix}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\T}{^{\intercal}}
+{^{\intercal}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\xor}{\oplus}
+{\oplus}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\norm}{\Vert}
+{\Vert}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\2}{^{2}}
+{^{2}}
+\end_inset
+
+
+\begin_inset FormulaMacro
+\newcommand{\and}{\wedge}
+{\wedge}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang hebrew
+\begin_inset Box Doublebox
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Title
+
+\lang american
+76552
+\lang english
+ | 
+\lang american
+Workshop in Computational BioSkills
+\lang english
+ | 
+\lang american
+Final Project
+\end_layout
+
+\begin_layout Author
+Guy Lutsker 207029448
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+
+\lang american
+\begin_inset Formula $\text{\ensuremath{\mathfrak{I}\boldsymbol{ntroduction}}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang american
+\begin_inset space \space{}
+\end_inset
+
+
+\begin_inset space \space{}
+\end_inset
+
+
+\begin_inset space \space{}
+\end_inset
+
+
+\begin_inset space \space{}
+\end_inset
+
+
+\begin_inset space \space{}
+\end_inset
+
+
+\begin_inset space \space{}
+\end_inset
+
+
+\begin_inset space \space{}
+\end_inset
+
+
+\begin_inset space \space{}
+\end_inset
+
+
+\begin_inset space \space{}
+\end_inset
+
+
+\begin_inset space \space{}
+\end_inset
+
+The project I chose was the project of Shimon Balsam, which was titled:
+ 
+\end_layout
+
+\begin_layout Standard
+
+\lang american
+\begin_inset Quotes eld
+\end_inset
+
+Resolving the Tissue Topology of the Alzheimer’s Brain
+\begin_inset Quotes erd
+\end_inset
+
+.The idea was to explore the brain tissue
+\end_layout
+
+\begin_layout Standard
+
+\lang american
+of Alzheimer(AD)
+\end_layout
+
+\begin_layout Standard
+
+\lang american
+patients VS healthy(WT) brain tissue by examining 3 genes which have been
+ associated with Alzheimer's 
+\end_layout
+
+\begin_layout Standard
+
+\lang american
+disease - Mfge8, Slc38a1, Myoc.
+\end_layout
+
+\begin_layout Standard
+
+\lang american
+The data I was given was a CSV file containing data on pictures taken of
+ the brain tissue.
+\end_layout
+
+\begin_layout Standard
+
+\lang american
+These are the pictures the data was created from:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename C:/Users/guylu/Downloads/pic WT.png
+	lyxscale 60
+	scale 60
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Picture of WT cells with fluorescent coloring for the 3 markers
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename C:/Users/guylu/Downloads/pic AD.png
+	lyxscale 60
+	scale 60
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Picture of AD cells with fluorescent coloring for the 3 markers
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset space \space{}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+As we can see there is a clear difference in the tissues.
+ For example we can clearly see distinct 
+\begin_inset Quotes eld
+\end_inset
+
+groups
+\begin_inset Quotes erd
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+of cyan colored markers in the AD brain tissue sample, whereas in the WT
+ such groups are not visible.
+\end_layout
+
+\begin_layout Standard
+But to learn exactly how AD brain tissue differs from WT brain tissue, we
+ need to analyze the data.
+\end_layout
+
+\begin_layout Standard
+So let's go ahead and make some graphs!
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+
+\lang american
+\begin_inset Formula $\text{\ensuremath{\mathfrak{E}\boldsymbol{xploratory\ Graph:HeatMap\ of\ Cells\ with\ Respect\ to\ Genes}}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset space \space{}
+\end_inset
+
+
+\begin_inset space \space{}
+\end_inset
+
+
+\begin_inset space \space{}
+\end_inset
+
+
+\begin_inset space \space{}
+\end_inset
+
+
+\begin_inset space \space{}
+\end_inset
+
+
+\begin_inset space \space{}
+\end_inset
+
+
+\begin_inset space \space{}
+\end_inset
+
+In this Section I decided to create a HeatMap describing the changes in
+ cells of Alzheimer's brain tissue,
+\end_layout
+
+\begin_layout Standard
+VS healthy cells.
+ Specifically I tried to show the difference in the way the 3 gene markers
+ appear.
+\end_layout
+
+\begin_layout Standard
+The Graph:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename C:/Users/guylu/Downloads/Rplot04.png
+	lyxscale 200
+	scale 68
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+HeatMap of WT/AD
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Explanation of results: 
+\end_layout
+
+\begin_layout Standard
+In this graph we can look at the data 
+\begin_inset Quotes eld
+\end_inset
+
+from a birds eye view
+\begin_inset Quotes erd
+\end_inset
+
+ and see what are the largest differences
+\end_layout
+
+\begin_layout Standard
+between the topology of the brain tissue of healthy WT brains VS an Alzheimer's
+ brain tissue.
+\end_layout
+
+\begin_layout Standard
+Since the data itself was rather sparse, I chose to filter some of the data
+ in the following matter:
+\end_layout
+
+\begin_layout Standard
+I chose to show in both HeatMaps only cells that expressed at least 2 genes
+ - i.e.
+ I took the sum of the gene
+\end_layout
+
+\begin_layout Standard
+expression in each cell and filtered out these with less than 3 genes expressed.
+\end_layout
+
+\begin_layout Standard
+As we can see the main result from this graph is that Alzheimer's brain
+ tissue expresses 
+\lang american
+Mfge8, and Myoc in 
+\end_layout
+
+\begin_layout Standard
+
+\lang american
+larger amount,
+\lang english
+ whereas it expresses 
+\lang american
+Slc38a1 in a smaller amount than a WT brain tissue.
+\end_layout
+
+\begin_layout Standard
+To explore these differences more closely, we can take a look at the 
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+Explanatory Graph in section 2.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The code that generated the 
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+exploratory
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ Graph:
+\end_layout
+
+\begin_layout Standard
+
+\lang american
+\begin_inset listings
+inline false
+status open
+
+\begin_layout Plain Layout
+
+# 				Graph One:
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+data$sum = data$cyan_Mfge8+data$green_Slc38a1+data$red_Myoc temp<-data[data$sum
+ > 2,]
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+# split table for sick samples and healthy ones
+\end_layout
+
+\begin_layout Plain Layout
+
+data1<-temp[temp$ImageNumber=="AD",] 
+\end_layout
+
+\begin_layout Plain Layout
+
+data2<-temp[temp$ImageNumber=="WT",]
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+# nice palatte:
+\end_layout
+
+\begin_layout Plain Layout
+
+my_palette<-
+\end_layout
+
+\begin_layout Plain Layout
+
+colorRampPalette(c("white","blue","green","yellow","red"))(n = 367)
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+# adjust the data as matrix for heatmap 
+\end_layout
+
+\begin_layout Plain Layout
+
+s1 = as.matrix(data1[,c("cyan_Mfge8","green_Slc38a1","red_Myoc")]) 
+\end_layout
+
+\begin_layout Plain Layout
+
+s2 = as.matrix(data2[,c("cyan_Mfge8","green_Slc38a1","red_Myoc")])
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+# creating heat map for sick and one for healthy
+\end_layout
+
+\begin_layout Plain Layout
+
+a <- list(pheatmap(s1,
+\end_layout
+
+\begin_layout Plain Layout
+
+	main = "HeatMap of Gene Expression of
+\backslash
+n
+\end_layout
+
+\begin_layout Plain Layout
+
+	Proteins that are Related to Alzheimer:
+\backslash
+nAlzheimer Brain",
+\end_layout
+
+\begin_layout Plain Layout
+
+	# heat map title                    
+\end_layout
+
+\begin_layout Plain Layout
+
+	notecol="black", # change font color of cell labels to black
+\end_layout
+
+\begin_layout Plain Layout
+
+	#density.info="none", # turns off density plot inside color legend 
+\end_layout
+
+\begin_layout Plain Layout
+
+	trace="none", # turns off trace lines inside the heat map 
+\end_layout
+
+\begin_layout Plain Layout
+
+	margins =c(14,2), # widens margins around plot
+\end_layout
+
+\begin_layout Plain Layout
+
+	col=my_palette, # use on color palette defined earlier
+\end_layout
+
+\begin_layout Plain Layout
+
+	#breaks=col_breaks, # enable color transition at specified limits
+\end_layout
+
+\begin_layout Plain Layout
+
+	dendrogram="row", # only draw a row dendrogram 
+\end_layout
+
+\begin_layout Plain Layout
+
+	cluster_cols = FALSE,   
+\end_layout
+
+\begin_layout Plain Layout
+
+    show_rownames = FALSE,
+\end_layout
+
+\begin_layout Plain Layout
+
+	Colv="NA") # turn off column clustering
+\end_layout
+
+\begin_layout Plain Layout
+
+	[[4]])
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+a[[2]] <- pheatmap(s2,
+\end_layout
+
+\begin_layout Plain Layout
+
+	main = "HeatMap of Gene Expression of
+\backslash
+n 
+\end_layout
+
+\begin_layout Plain Layout
+
+	Proteins that are Related to Alzheimer:
+\backslash
+nHealthy Brain",                   
+\end_layout
+
+\begin_layout Plain Layout
+
+	# heat map title 
+\end_layout
+
+\begin_layout Plain Layout
+
+	notecol="black", # change font color of cell labels to black
+\end_layout
+
+\begin_layout Plain Layout
+
+	#density.info="none", # turns off density plot inside color legend 
+\end_layout
+
+\begin_layout Plain Layout
+
+	trace="none", # turns off trace lines inside the heat map 
+\end_layout
+
+\begin_layout Plain Layout
+
+	margins =c(14,2), # widens margins around plot
+\end_layout
+
+\begin_layout Plain Layout
+
+	col=my_palette, # use on color palette defined earlier
+\end_layout
+
+\begin_layout Plain Layout
+
+	#breaks=col_breaks, # enable color transition at specified limits
+\end_layout
+
+\begin_layout Plain Layout
+
+	dendrogram="row", # only draw a row dendrogram 
+\end_layout
+
+\begin_layout Plain Layout
+
+	cluster_cols = FALSE,       
+\end_layout
+
+\begin_layout Plain Layout
+
+    show_rownames = FALSE,
+\end_layout
+
+\begin_layout Plain Layout
+
+	Colv="NA")[[4]]  # turn off column clustering
+\end_layout
+
+\begin_layout Plain Layout
+
+merged_heatmaps <- grid.arrange(arrangeGrob(grobs= a,nrow=1)) plot(merged_heatmap
+s)
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+
+\lang american
+\begin_inset Formula $\text{\ensuremath{\mathfrak{E}\boldsymbol{xplanatory\ Graph:Distribution\ of\ Gene\ Markers\ in\ WT/AD}}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset space \space{}
+\end_inset
+
+
+\begin_inset space \space{}
+\end_inset
+
+
+\begin_inset space \space{}
+\end_inset
+
+
+\begin_inset space \space{}
+\end_inset
+
+
+\begin_inset space \space{}
+\end_inset
+
+
+\begin_inset space \space{}
+\end_inset
+
+
+\begin_inset space \space{}
+\end_inset
+
+In this section I have decided to explore the distribution of the 3 gene
+ markers
+\lang american
+ Mfge8, Slc38a1, Myoc.
+\end_layout
+
+\begin_layout Standard
+The idea is to count the number of cells in the pictures taken of the tissue,
+\end_layout
+
+\begin_layout Standard
+and count how many proteins of each marker have appears in each cell in
+ the picture.
+\end_layout
+
+\begin_layout Standard
+We can take this data and plot the different distributions of the proteins
+ in WT tissue VS AD tissue.
+\end_layout
+
+\begin_layout Standard
+\begin_inset space \space{}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The Graph:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename C:/Users/guylu/Downloads/Annotation 2020-07-13 182202.png
+	lyxscale 48
+	scale 48
+	rotateOrigin leftTop
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Box Plot of Distribution of Protein Markers in Brain tissue: WT/AD
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Explanation of results:
+\end_layout
+
+\begin_layout Standard
+In this graph we can actually look at the individual data points and get
+ some additional information.
+\end_layout
+
+\begin_layout Standard
+Here I have a direct comparison between the 3 protein markers with WT VS
+ AD.
+\end_layout
+
+\begin_layout Standard
+Since this is an interactive plot we can slide our mouse on the graph and
+ get additional information regarding
+\end_layout
+
+\begin_layout Standard
+each element in the graph - such as the mean of the expression of each marker
+ in WT or in AD, the max value,
+\end_layout
+
+\begin_layout Standard
+the min value, etc.
+\end_layout
+
+\begin_layout Standard
+And so, we can explore the data in a more meaningful way, and understand
+ which parts of the data
+\end_layout
+
+\begin_layout Standard
+require additional analysis, and which are ready to reach conclusions from.
+ 
+\end_layout
+
+\begin_layout Standard
+the plot can also be found here: https://www.cse.huji.ac.il/~guy_lutsker/plot.html
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The code that generated the 
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+explanatory
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ Graph:
+\end_layout
+
+\begin_layout Standard
+
+\lang american
+\begin_inset listings
+inline false
+status open
+
+\begin_layout Plain Layout
+
+# 				Graph Two:
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+# melted data to tranfroms it, thusly it will be easier to graph later
+\end_layout
+
+\begin_layout Plain Layout
+
+melted_data<-melt(data = data, id.vars = c("id","ImageNumber"),
+\end_layout
+
+\begin_layout Plain Layout
+
+measure.vars = c("cyan_Mfge8","green_Slc38a1","red_Myoc")) 
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+# adding column for graph 
+\end_layout
+
+\begin_layout Plain Layout
+
+melted_data$new <- paste(melted_data$variable,melted_data$ImageNumber)
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+#title="Expression in Cells") #type = "log")
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+jittered_vals<-jitter(as.numeric(melted_data$value), factor=1, amount = NULL)
+\end_layout
+
+\begin_layout Plain Layout
+
+# creating the plotly graph
+\end_layout
+
+\begin_layout Plain Layout
+
+p2<-melted_data %>%  
+\end_layout
+
+\begin_layout Plain Layout
+
+group_by(ImageNumber) %>%  
+\end_layout
+
+\begin_layout Plain Layout
+
+plot_ly(x=~new ,y=jittered_vals,color = ~ImageNumber,
+\end_layout
+
+\begin_layout Plain Layout
+
+text = ~paste(" Id:",id,"<br>",                                        
+                                    "State:",ImageNumber,"<br>",       
+                                                                     "Value:",va
+lue,"<br>"),  
+\end_layout
+
+\begin_layout Plain Layout
+
+ 	   hoverinfo="text",
+\end_layout
+
+\begin_layout Plain Layout
+
+        boxpoints = "all",pointpos = 0,jitter=0.7,marker = list(size = 4))%>%
+\end_layout
+
+\begin_layout Plain Layout
+
+  #add_trace(x = ~new,y = ~value, color = ~ImageNumber, type = "violin")
+ %>%   add_boxplot() %>%  
+\end_layout
+
+\begin_layout Plain Layout
+
+layout(xaxis= list(title="Genes + WT/FAD",),
+\end_layout
+
+\begin_layout Plain Layout
+
+yaxis= list(title="Expression in Cells"),
+\end_layout
+
+\begin_layout Plain Layout
+
+title="Distribution of Proteins in WT/AD Tissue")  
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+p2
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+
+\lang american
+\begin_inset Formula $\text{\ensuremath{\mathfrak{C}\boldsymbol{ode}}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The entire code of this project:
+\end_layout
+
+\begin_layout Standard
+
+\lang american
+\begin_inset listings
+inline false
+status open
+
+\begin_layout Plain Layout
+
+# clear all 
+\end_layout
+
+\begin_layout Plain Layout
+
+clear all rm(list=ls())
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+# set directory
+\end_layout
+
+\begin_layout Plain Layout
+
+setwd("/Users/guylu/Downloads/")
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+# all libs: 
+\end_layout
+
+\begin_layout Plain Layout
+
+library(ggplot2)
+\end_layout
+
+\begin_layout Plain Layout
+
+library(plotly)
+\end_layout
+
+\begin_layout Plain Layout
+
+library("tidyverse")
+\end_layout
+
+\begin_layout Plain Layout
+
+library(stringr)
+\end_layout
+
+\begin_layout Plain Layout
+
+library(dplyr) 
+\end_layout
+
+\begin_layout Plain Layout
+
+library(reshape2)
+\end_layout
+
+\begin_layout Plain Layout
+
+library(gplots)
+\end_layout
+
+\begin_layout Plain Layout
+
+library(gridGraphics)
+\end_layout
+
+\begin_layout Plain Layout
+
+library(grid)
+\end_layout
+
+\begin_layout Plain Layout
+
+library(gplots) 
+\end_layout
+
+\begin_layout Plain Layout
+
+library(pheatmap)
+\end_layout
+
+\begin_layout Plain Layout
+
+library(gridExtra)
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+# 			abit of preprocessing:
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+#read data:
+\end_layout
+
+\begin_layout Plain Layout
+
+data <- read.csv("MyExpt_IdentifySecondaryObjectsBlue.csv")
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+# add id column 
+\end_layout
+
+\begin_layout Plain Layout
+
+data <- tibble::rowid_to_column(data, "id") 
+\end_layout
+
+\begin_layout Plain Layout
+
+# change values for readability 1 - sick, 2- healthy 
+\end_layout
+
+\begin_layout Plain Layout
+
+data$ImageNumber <- sub(1, "AD", data$ImageNumber)
+\end_layout
+
+\begin_layout Plain Layout
+
+data$ImageNumber <- sub(2, "WT", data$ImageNumber)
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+# change column names for markers in image to gene names
+\end_layout
+
+\begin_layout Plain Layout
+
+names(data)[names(data) == 'Children_IdentifyPrimaryObjectsCyon_Count']
+ <- 
+\end_layout
+
+\begin_layout Plain Layout
+
+'cyan_Mfge8'
+\end_layout
+
+\begin_layout Plain Layout
+
+names(data)[names(data) == 'Children_IdentifyPrimaryObjectsGreen_Count']
+ <-
+\end_layout
+
+\begin_layout Plain Layout
+
+'green_Slc38a1' 
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+names(data)[names(data) == 'Children_IdentifyPrimaryObjectsRed_Count'] <-
+ 'red_Myoc'
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+# 				Graph One:
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+data$sum = data$cyan_Mfge8+data$green_Slc38a1+data$red_Myoc temp<-data[data$sum
+ > 2,]
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+# split table for sick samples and healthy ones
+\end_layout
+
+\begin_layout Plain Layout
+
+data1<-temp[temp$ImageNumber=="AD",] 
+\end_layout
+
+\begin_layout Plain Layout
+
+data2<-temp[temp$ImageNumber=="WT",]
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+# nice palatte:
+\end_layout
+
+\begin_layout Plain Layout
+
+my_palette<-
+\end_layout
+
+\begin_layout Plain Layout
+
+colorRampPalette(c("white","blue","green","yellow","red"))(n = 367)
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+# adjust the data as matrix for heatmap 
+\end_layout
+
+\begin_layout Plain Layout
+
+s1 = as.matrix(data1[,c("cyan_Mfge8","green_Slc38a1","red_Myoc")]) 
+\end_layout
+
+\begin_layout Plain Layout
+
+s2 = as.matrix(data2[,c("cyan_Mfge8","green_Slc38a1","red_Myoc")])
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+# creating heat map for sick and one for healthy
+\end_layout
+
+\begin_layout Plain Layout
+
+a <- list(pheatmap(s1,
+\end_layout
+
+\begin_layout Plain Layout
+
+	main = "HeatMap of Gene Expression of
+\backslash
+n
+\end_layout
+
+\begin_layout Plain Layout
+
+	Proteins that are Related to Alzheimer:
+\backslash
+nAlzheimer Brain",
+\end_layout
+
+\begin_layout Plain Layout
+
+	# heat map title                    
+\end_layout
+
+\begin_layout Plain Layout
+
+	notecol="black", # change font color of cell labels to black
+\end_layout
+
+\begin_layout Plain Layout
+
+	#density.info="none", # turns off density plot inside color legend 
+\end_layout
+
+\begin_layout Plain Layout
+
+	trace="none", # turns off trace lines inside the heat map 
+\end_layout
+
+\begin_layout Plain Layout
+
+	margins =c(14,2), # widens margins around plot
+\end_layout
+
+\begin_layout Plain Layout
+
+	col=my_palette, # use on color palette defined earlier
+\end_layout
+
+\begin_layout Plain Layout
+
+	#breaks=col_breaks, # enable color transition at specified limits
+\end_layout
+
+\begin_layout Plain Layout
+
+	dendrogram="row", # only draw a row dendrogram 
+\end_layout
+
+\begin_layout Plain Layout
+
+	cluster_cols = FALSE,   
+\end_layout
+
+\begin_layout Plain Layout
+
+    show_rownames = FALSE,
+\end_layout
+
+\begin_layout Plain Layout
+
+	Colv="NA") # turn off column clustering
+\end_layout
+
+\begin_layout Plain Layout
+
+	[[4]])
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+a[[2]] <- pheatmap(s2,
+\end_layout
+
+\begin_layout Plain Layout
+
+	main = "HeatMap of Gene Expression of
+\backslash
+n 
+\end_layout
+
+\begin_layout Plain Layout
+
+	Proteins that are Related to Alzheimer:
+\backslash
+nHealthy Brain",                   
+\end_layout
+
+\begin_layout Plain Layout
+
+	# heat map title 
+\end_layout
+
+\begin_layout Plain Layout
+
+	notecol="black", # change font color of cell labels to black
+\end_layout
+
+\begin_layout Plain Layout
+
+	#density.info="none", # turns off density plot inside color legend 
+\end_layout
+
+\begin_layout Plain Layout
+
+	trace="none", # turns off trace lines inside the heat map 
+\end_layout
+
+\begin_layout Plain Layout
+
+	margins =c(14,2), # widens margins around plot
+\end_layout
+
+\begin_layout Plain Layout
+
+	col=my_palette, # use on color palette defined earlier
+\end_layout
+
+\begin_layout Plain Layout
+
+	#breaks=col_breaks, # enable color transition at specified limits
+\end_layout
+
+\begin_layout Plain Layout
+
+	dendrogram="row", # only draw a row dendrogram 
+\end_layout
+
+\begin_layout Plain Layout
+
+	cluster_cols = FALSE,       
+\end_layout
+
+\begin_layout Plain Layout
+
+    show_rownames = FALSE,
+\end_layout
+
+\begin_layout Plain Layout
+
+	Colv="NA")[[4]]  # turn off column clustering
+\end_layout
+
+\begin_layout Plain Layout
+
+merged_heatmaps <- grid.arrange(arrangeGrob(grobs= a,nrow=1)) plot(merged_heatmap
+s)
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+# 				Graph Two:
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+# melted data to tranfroms it, thusly it will be easier to graph later
+\end_layout
+
+\begin_layout Plain Layout
+
+melted_data<-melt(data = data, id.vars = c("id","ImageNumber"),
+\end_layout
+
+\begin_layout Plain Layout
+
+measure.vars = c("cyan_Mfge8","green_Slc38a1","red_Myoc")) 
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+# adding column for graph 
+\end_layout
+
+\begin_layout Plain Layout
+
+melted_data$new <- paste(melted_data$variable,melted_data$ImageNumber)
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+#title="Expression in Cells") #type = "log")
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+jittered_vals<-jitter(as.numeric(melted_data$value), factor=1, amount = NULL)
+\end_layout
+
+\begin_layout Plain Layout
+
+# creating the plotly graph
+\end_layout
+
+\begin_layout Plain Layout
+
+p2<-melted_data %>%  
+\end_layout
+
+\begin_layout Plain Layout
+
+group_by(ImageNumber) %>%  
+\end_layout
+
+\begin_layout Plain Layout
+
+plot_ly(x=~new ,y=jittered_vals,color = ~ImageNumber,
+\end_layout
+
+\begin_layout Plain Layout
+
+text = ~paste(" Id:",id,"<br>",                                        
+                                    "State:",ImageNumber,"<br>",       
+                                                                     "Value:",va
+lue,"<br>"),  
+\end_layout
+
+\begin_layout Plain Layout
+
+ 	   hoverinfo="text",
+\end_layout
+
+\begin_layout Plain Layout
+
+        boxpoints = "all",pointpos = 0,jitter=0.7,marker = list(size = 4))%>%
+\end_layout
+
+\begin_layout Plain Layout
+
+  #add_trace(x = ~new,y = ~value, color = ~ImageNumber, type = "violin")
+ %>%   add_boxplot() %>%  
+\end_layout
+
+\begin_layout Plain Layout
+
+layout(xaxis= list(title="Genes + WT/FAD",),
+\end_layout
+
+\begin_layout Plain Layout
+
+yaxis= list(title="Expression in Cells"),
+\end_layout
+
+\begin_layout Plain Layout
+
+title="Distribution of Proteins in WT/AD Tissue")  
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+p2
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document
